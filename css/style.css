@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #1A56DB;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+header {
+  border-bottom: 2px solid #CCCCCC;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: #333333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  border-color: #1A56DB;
+}
+
+nav a.active {
+  border-color: #1A56DB;
+  color: #1A56DB;
+  background-color: #F3F4F6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 60vh;
+}
+
+footer {
+  border-top: 2px solid #CCCCCC;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.25rem;
+  color: #1A56DB;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  margin-top: 0.5rem;
+  background-color: #1A56DB;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #15409E;
+}
+
+.quick-links {
+  text-align: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.quick-links ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.quick-links a {
+  font-weight: 600;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.highlights article {
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.highlights p {
+  margin-bottom: 0.75rem;
+}
+
+.highlights a {
+  font-weight: 600;
+}
+
+.page-intro {
+  margin-bottom: 2rem;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #F3F4F6;
+}
+
+.profile .bio {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile p {
+  margin-bottom: 1rem;
+}
+
+.facts {
+  background-color: #F3F4F6;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+}
+
+.facts ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.facts li {
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 1.25rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.project-card h2,
+.project-card p {
+  padding: 0 1.25rem;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+}
+
+.project-card .tech {
+  color: #1A56DB;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-card .links {
+  padding: 0 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card a {
+  font-weight: 600;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills article {
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.skills li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 0.8rem;
+}
+
+.contact label {
+  text-align: left;
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #1A56DB;
+  outline: none;
+}
+
+.contact button {
+  padding: 0.75rem;
+  background-color: #1A56DB;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #15409E;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  font-weight: 600;
+}
